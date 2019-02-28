@@ -1,0 +1,111 @@
+/* *********移动端********** */
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+figure,
+figcaption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+// /* 改变盒子模型 */
+// section,
+// article,
+// nav,
+// aside,
+// footer,
+// header,
+// div,
+// p,
+// ul,
+// li,
+// input,
+// textarea {
+//     display: block;
+//     @extend %box-sizing;
+// }
+
+html,
+body {
+    -webkit-user-select: none;
+    /* 禁止选中文本 */
+    user-select: none;
+    -webkit-text-size-adjust: 100%;
+    /* iphone禁用文字大小调整 */
+    -ms-text-size-adjust: 100%;
+}
+
+
+
+body {
+    -webkit-overflow-scrolling: touch;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: normal;
+}
+
+// /* 清除点击虚拟框 */
+a,
+div,
+p,
+span,
+ul,
+li,
+i,
+img,
+input {
+    outline: 0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+a:focus {
+    outline: 0;
+}
+
+a:link,
+a:visited {
+    color: $defaultColor;
+    text-decoration: none;
+}
+
+a img {
+    border: 0 none;
+}
+
+a,
+img {
+    -webkit-touch-callout: none;
+    /* 禁止长按链接与图片弹出菜单 */
+}
+
+input,
+textarea,
+select {
+    outline: none;
+     color: $defaultColor;
+     font-family: $mobileFont;
+ }
+
+ input {
+//     /* 清除 iphone 中 input 默认样式 */
+     -webkit-appearance: none;
+ }
